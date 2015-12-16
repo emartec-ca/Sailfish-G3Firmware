@@ -59,7 +59,7 @@ void CoolingFan::manageCoolingFan() {
 	  int temp = heater.get_current_temperature();
 	  if (temp >= setPoint)
 	       setFanRunning(true);
-	  else if (temp < (setPoint - 1))
+	  else if (temp < (setPoint - 5))
 	       setFanRunning(false);
      }
 }
